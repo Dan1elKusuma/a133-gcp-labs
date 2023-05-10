@@ -6,14 +6,14 @@ const path = require('path');
 
 const pathKey = path.resolve('./serviceaccountkey.json')
 
-// TODO: Sesuaikan konfigurasi Storage
+// TODO: Sesuaikan konfigurasi Storage : clear
 const gcs = new Storage({
-    projectId: 'project_id_Anda',
+    projectId: 'submission-mgce-danielkusuma',
     keyFilename: pathKey
 })
 
-// TODO: Tambahkan nama bucket yang digunakan
-const bucketName = 'nama_GCS_bucket_Anda'
+// TODO: Tambahkan nama bucket yang digunakan: clear
+const bucketName = 'bucket-dicoding-mgce-submission'
 const bucket = gcs.bucket(bucketName)
 
 function getPublicUrl(filename) {
