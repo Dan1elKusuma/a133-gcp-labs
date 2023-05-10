@@ -9,12 +9,12 @@ const multer = Multer({
     fileSize: 5 * 1024 * 1024
 })
 
-// TODO: Sesuaikan konfigurasi database
+// TODO: Sesuaikan konfigurasi database : clear
 const connection = mysql.createConnection({
-    host: 'public_ip_sql_instance_Anda',
+    host: '34.101.241.251',
     user: 'root',
-    database: 'nama_database_Anda',
-    password: 'password_sql_Anda'
+    database: 'database_dicoding_submission',
+    password: 'root'
 })
 
 router.get("/dashboard", (req, res) => {
